@@ -1,0 +1,112 @@
+/* ESTILOS GERAIS */
+/*tira todo tipo de fomatacao, desain estilo, etc de todo texto*/
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+.container{/*uma segunda header dentro da header contendo todos as informacoes com ele */
+	background-color: white;/*hader marrom mais a segunda header branca menor centralizada*/
+    width: 100%;/*ante erro. garantia que vai ser usada 100% dos px horizontais disponives*/
+    max-width: 1125px;/*quantidades de pixes horizontais*/
+    margin: 0 auto;/*0;para cima e baixo. automatico ditribuido...*/
+	padding: 30px 30px;
+}
+.hidden{/*identidade da quilo que eu sei que voi ter que esconder*/
+	display:none;/*esconder o figcaption*/
+}
+.coluna{
+	    flex-basis: 49%;/*quantidade de espaço usado*/
+}
+.linha{
+	display: flex;/*linha=conteudo do container. divdir em coluna*/
+    flex-wrap: wrap;/*retirar quebra de texto do div*/
+	align-items: flex-start;/*posisao da caixa de conteudo:padrao*/
+    justify-content: space-between;/*o que sobrar de espaço fica no meio*/
+}
+/* BODY */
+body{
+	font-family: 'Open Sans', sans-serif;/*fonte importada*/
+}
+/* HADER */
+header{
+	background-color: #b8870ba1;
+	padding-top: 30px;/*disncia do topo da header com o container*/
+}
+header .container{}
+header .linha{align-items: center;/*posisao da caixa de conteudo:centro*/}
+header .coluna{}
+header .coluna-esquerda{flex-basis: 30%;}
+header .coluna-direita{flex-basis: 70%;}
+header .coluna figure{}
+header .coluna img{
+	max-height: 250px;/*autura e largura da img*/
+	border-radius: 100%;/*raio da borda da img.fica estranho se a img nao for quadrada*/
+}
+header .coluna h1{font-size: 1.5rem;}
+header .coluna p{
+	font-size: 1rem;
+	color: #636363;
+}
+header .coluna ul{margin: 15px 0px 0px;/*estilizacao do posicionamento*/}
+header .coluna ul li{margin: 0px 0px 12px;/*estilizacao do posicionamento*/}
+header .coluna ul li a{
+	font-size: 1rem;
+	color: black;
+}
+/* FOOTER */
+footer{}
+footer .container{}
+footer nav{}
+footer nav ul{}
+footer nav ul li{}
+footer nav ul li a{}
+footer nav .info-contato{}
+footer nav .info-contato ul{}
+footer nav .info-contato ul li{}
+footer nav .info-contato ul li a{}
+footer nav .info-socias{}
+footer nav .info-socias ul{}
+footer nav .info-socias ul li{}
+footer nav .info-socias ul li a{}
+footer nav .info-socias ul li a p{}
+/* PAGINA INICIAL */
+main{}
+main .conteiner{}
+main .linha{}
+main .coluna{}
+main .coluna-esquerda{}
+main .coluna-direita{}
+main .coluna section{
+	border: 1px solid #ad7f21;
+	margin: 0 0 20px;
+	padding: 20px;
+	min-height: 136px;/*autura minima. esticou o conteudo*/
+}
+main .coluna section h2{
+	font-size: 1.3rem;
+	margin: 0 0 15px;
+}
+main .coluna section p{    
+	font-size: 1rem;
+    color: #353535;
+	line-height:1.5;/*espasso entre linhas de um paragrafo*/
+}
+main .coluna section ul{}
+main .coluna section ul li{
+	margin: 0 0 12px;
+}
+main .coluna section ul li h3{font-size: 1.1rem;}
+main .coluna section ul li strong{   
+	font-size: 0.9rem;
+    font-weight: 500;/*estrong e muito preto, insso e um menor*/
+	margin: 5px 0 10px;/*espacamto*/
+	display: inline-block;/*esta em linha*/
+}
+main .coluna section ul li p{}
+
+/* EXTRAS */
+
+/* @MIDIA */
